@@ -8,68 +8,43 @@
     .collapse.navbar-collapse#navbar-1
       %ul.nav.navbar-nav
         %li{:class=>"#{'active' if page.output_path.start_with?('/index') }" }<
-          %a(href="#{site.base_url}/index.html") Home
+          %a(href="/index.html") Home
         %li{:class=>"#{'active' if page.output_path.start_with?('/downloads') }" }<
-          %a(href="#{site.base_url}/downloads.html") Downloads
-        %li{:class=>"#{'active' if page.output_path.start_with?('/docs') }" }<
-          %a(href="#{site.base_url}/docs.html") Docs
+          %a(href="/downloads.html") Downloads
+        %li<
+          %a(href="http://docs.jboss.org/overlord/sramp" target="_blank") Docs
         %li.dropdown
           %a.dropdown-toggle(href="#" data-toggle="dropdown")<
-            = precede 'Community ' do
+            = precede 'Get Involved ' do
               %b.caret>
           %ul.dropdown-menu
             %li<
-              %a(href="#") Overview
+              %a(href="/contribute.html") Contribute
             %li<
-              %a(href="#") Wiki
+              %a(href="https://issues.jboss.org/browse/ARTIF" target="_blank") Feature/Bug Tracker
             %li<
-              %a(href="#") User Forum
+              %a(href="/chat.html") Chat
             %li<
-              %a(href="#") Mailing Lists
+              %a(href="https://developer.jboss.org/en/artificer" target="_blank") User Forum
             %li<
-              %a(href="#") Chat
-            %li<
-              %a(href="#") Blog
-        %li{:class=>"#{'active' if page.output_path.start_with?('/issues') }" }<
-          %a(href="#{site.base_url}/issues.html") Issues
-        %li{:class=>"#{'active' if page.output_path.start_with?('/source') }" }<
-          %a(href="#{site.base_url}/source.html") Source Code
-        %li{:class=>"#{'active' if page.output_path.start_with?('/build') }" }<
-          %a(href="#{site.base_url}/build.html") Build
+              %a(href="https://developer.jboss.org/en/artificer/dev" target="_blank") Developer Forum
+        %li<
+          %a(href="https://issues.jboss.org/browse/ARTIF" target="_blank") Feature/Bug Tracker
+        %li<
+          %a(href="https://github.com/ArtificerRepo/artificer" target="_blank") Source Code
         %li.dropdown
           %a.dropdown-toggle(href="#" data-toggle="dropdown")<
             = precede 'Follow Us ' do
               %b.caret>
-          %ul.dropdown-menu.projectsocialmedia
-            %li<
-              %a(href="#")<
-                %img(src="#{site.jborg_images_url}/common/socialmedia_icon40_twitter.png")
-            %li<
-              %a(href="#")<
-                %img(src="#{site.jborg_images_url}/common/socialmedia_icon40_googleplus.png")
-            %li<
-              %a(href="#")<
-                %img(src="#{site.jborg_images_url}/common/socialmedia_icon40_facebook.png")
-            %li<
-              %a(href="#")<
-                %img(src="#{site.jborg_images_url}/common/socialmedia_icon40_youtube.png")
-            %li<
-              %a(href="#")<
-                %img(src="#{site.jborg_images_url}/common/socialmedia_icon40_linkedin.png")
-        %li.dropdown
-          %a.dropdown-toggle(href="#" data-toggle="dropdown")<
-            = precede 'Layouts ' do
-              %b.caret>
           %ul.dropdown-menu
             %li<
-              %a(href="#{site.base_url}/rightcol.html") Right Column
+              %a(href="https://twitter.com/ArtificerRepo" target="_blank") @ArtificerRepo
             %li<
-              %a(href="#{site.base_url}/leftcol.html") Left Column
+              %a(href="https://developer.jboss.org/en/artificer/blog" target="_blank") Blog
             %li<
-              %a(href="#{site.base_url}/bothcol.html") 3 Columns
-        %li.divider
-
-      %form.navbar-form.navbar-right
-        %input.form-control(type="text" placeholder="Search")
-
+              %a(href="/chat.html") Chat
+            %li<
+              %a(href="https://developer.jboss.org/en/artificer" target="_blank") User Forum
+            %li<
+              %a(href="https://developer.jboss.org/en/artificer/dev" target="_blank") Developer Forum
 = breadcrumb(page.real_page.output_path)
