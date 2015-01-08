@@ -6,10 +6,60 @@ title: Artificer
 #accordionAnnounce.alert.alert-warning.alert-dismissible
   %button.close{"data-dismiss" => "alert", :type => "button"} &times;
   %h4.alert-heading
-    .icon.icon-asterisk This website is a work-in-progress!
+    .icon.icon-asterisk NOTE!
   %p
-    This project was formally known as Overlord S-RAMP and was recently renamed.  Until the process is complete,
-    %a.alert-link(href="http://www.projectoverlord.io/s-ramp/") please see the old website!
+    This project was formally known as Overlord S-RAMP and was recently renamed!
 
 = partial( page.jumbotron_partial.nil? ? 'jumbotron.html.haml' : page.jumbotron_partial , { "real_page" => page } )
 
+.row
+  .col-md-6
+    %h2
+      Artificer
+    %p
+      Artificer is an artifact and metadata repository comprised of a common data model, multiple interfaces, and powerful tools.
+      It implements the
+      %a(href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=s-ramp" target="_blank") OASIS S-RAMP specification
+      which defines the data model, query language, and an Atom REST binding.
+    %p
+      In addition to implementing the spec, Artificer provides a suite of powerful, flexible, and extensible capabilities, described below.
+    %p
+      Artificer is 100% open source -- contributions are welcome! Click here to find out how to get involved!
+  .col-md-6
+    %h2
+      Use Cases
+    %ul
+      %li Publish/consume artifacts and services (both logical and physical)
+      %li Artifact lifecycle management
+      %li Thin interface for governance workflows
+      %li Understand and manage artifact relationships
+      %li Service discovery and re-use
+      %li Impact discovery and analysis
+      %li Store and manage configurations, policies, etc.
+      %li Manage service information (performance, availability, etc.)
+
+#equalHeightsB.row.equalHero
+  .col-md-3
+    .row
+      %h3
+        Artifact Repository
+      %p
+        Store all your binaries, files, and metadata in this easy to use and extensible repository. Automatically expand and derive sub-artifacts.
+  .col-md-3
+    .row
+      %h3
+        Untangling
+      %p
+        Utilize the powerful XPath-based query language, hierarchical classifiers (ontologies), artifact relationships, custom properties, and built-in metadata.
+  .col-md-3
+    .row
+      %h3
+        Easy Integration
+      %p
+        Take advantage of out-of-the-box deployment and dependency integration with Maven. Design your own interactions using the included Java client.
+  .col-md-3
+    .row
+      %h3
+        Multiple Interfaces
+      %p
+        Easily interact with the repository using the S-RAMP specificaton mandated Atom REST API. Browse the contents of the repository using either the feature-rich web UI or the command line client.
