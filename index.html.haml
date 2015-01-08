@@ -63,3 +63,37 @@ title: Artificer
         Multiple Interfaces
       %p
         Easily interact with the repository using the S-RAMP specificaton mandated Atom REST API. Browse the contents of the repository using either the feature-rich web UI or the command line client.
+
+.row
+  .col-md-4
+    %section
+      %h4 Latest Tweets
+      <a height="600" class="twitter-timeline" data-chrome="noheader nofooter transparent" data-dnt="true" href="https://twitter.com/ArtificerRepo"  data-widget-id="553282959193964544">Tweets by @ArtificerRepo</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  .col-md-4
+    %section
+      %h4 Latest Blog Posts
+      #blogDiv
+      :javascript
+          $(document).ready(function () {
+            $('#blogDiv').FeedEk({
+              FeedUrl: 'http://planet.jboss.org/xml/artificer?type=atom',
+              MaxCount: 10,
+              ShowDesc: false,
+              CharacterLimit: 200
+            });
+          });
+  .col-md-4
+    %section
+      .twocol_right{:style => "text-align:right;"}
+        #jiraDiv
+        :javascript
+              $(document).ready(function () {
+                processJiraWidget(  {
+                  jqlQuery : 'project = ARTIF AND (status = Open OR status = Reopened)',
+                  maxResults : 3,
+                  startAt : 0,
+                  divId : 'jiraDiv',
+                  title : 'Jira Issues'
+                })
+              });
