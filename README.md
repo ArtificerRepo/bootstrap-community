@@ -14,10 +14,13 @@ Contents of this repository are available as open source software under [Apache 
 
 System Requirements
 ===================
+* gcc
+* gcc-c++
 * Ruby 1.8.7 or above
 * RubyGems - 1.3.6 or above
+* ruby-devel
+* libxml2, libxml2-devel, libxslt, and libxslt-devel (i686 versions) (RHEL/CentOS)
 * Bundler - 1.3.5
-
 * GNU Wget 1.14
 
 Getting Started
