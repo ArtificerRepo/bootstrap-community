@@ -1,0 +1,82 @@
+---
+layout: project
+title: Roadmap
+---
+
+%p
+  Here's where we're headed!  Of course, roadmaps are never set in stone, but this will at least give you an idea of
+  what's in the pipeline.  Note that completed items are *not* listed.  To get a better idea of what's already finished,
+  see the "Changes" links on the
+  %a(href="/downloads.html")Downloads
+  page.
+
+%p
+  Think something's missing or should be made more of a priority?  We'd love to
+  %a(href="https://developer.jboss.org/en/artificer" target="_blank")hear from you!
+
+%ul
+  %li
+    1.0
+    %ul
+      %li
+        Switch to RDBMS + Hibernate ORM + Hibernate Search + Hibernate 2nd Level Cache as storage solution
+        %a(href="https://issues.jboss.org/browse/ARTIF-683" target="_blank")ARTIF-683
+        %ul
+          %li
+            Plan to keep ModeShape/JCR as an option, but completely replacing it can be considered if the alternative
+            proves to be demonstrably better in all use cases.
+      %li
+        Artifact versioning:
+        %a(href="https://issues.jboss.org/browse/ARTIF-681" target="_blank")ARTIF-681
+      %li
+        Refine artifact auditing in all UIs:
+        %a(href="https://issues.jboss.org/browse/ARTIF-679" target="_blank")ARTIF-679
+      %li
+        Project graphics and branding (in progress)
+  %li
+    1.1
+    %ul
+      %li
+        Create a new JSON REST service layer and use across all interfaces.  Continue to support the Atom layer, but
+        purely for external use.
+        %a(href="https://issues.jboss.org/browse/ARTIF-677" target="_blank")ARTIF-677
+      %li
+        Increased unit test coverage
+      %li
+        Relationship visualization:
+        %a(href="https://issues.jboss.org/browse/ARTIF-467" target="_blank")ARTIF-467
+      %li
+        Eclipse IDE plugin:
+        %a(href="https://issues.jboss.org/browse/ARTIF-16" target="_blank")ARTIF-16
+  %li
+    1.2
+    %ul
+      %li
+        Define new general-use “service” model and metadata:
+        %a(href="https://issues.jboss.org/browse/ARTIF-675" target="_blank")ARTIF-675
+      %li
+        UI improvements
+        %ul
+          %li
+            Would at least like to incorporate Patternfly
+          %li
+            Could stick with current impl (Errai/GWT)
+          %li
+            May be re-written with Angular and hawt.io
+      %li
+        Fine-grained, role-based access control:
+        %a(href="https://issues.jboss.org/browse/ARTIF-163" target="_blank")ARTIF-163
+      %li
+        Improved relationship resolution:
+        %a(href="https://issues.jboss.org/browse/ARTIF-465" target="_blank")ARTIF-465
+  %li
+    1.3
+    %ul
+      %li
+        Allow users to supply extensions through a new plugin architecture:
+        %a(href="https://issues.jboss.org/browse/ARTIF-645" target="_blank")ARTIF-645
+      %li
+        New artifact types
+      %li
+        Exclusive classifiers:
+        %a(href="https://issues.jboss.org/browse/ARTIF-439" target="_blank")ARTIF-439
